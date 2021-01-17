@@ -1,0 +1,95 @@
+{
+	"devices": [
+		{
+			"name": "enterprises/*****/devices/*****",
+			"type": "sdm.devices.types.THERMOSTAT",
+			"assignee": "enterprises/*****/structures/*****/rooms/*****",
+			"traits": {
+				"sdm.devices.traits.Info": {
+					"customName": ""
+				},
+				"sdm.devices.traits.Humidity": {
+					"ambientHumidityPercent": 48
+				},
+				"sdm.devices.traits.Connectivity": {
+					"status": "ONLINE"
+				},
+				"sdm.devices.traits.Fan": {
+					"timerMode": "OFF"
+				},
+				"sdm.devices.traits.ThermostatMode": {
+					"mode": "HEATCOOL",
+					"availableModes": [
+						"HEAT",
+						"COOL",
+						"HEATCOOL",
+						"OFF"
+					]
+				},
+				"sdm.devices.traits.ThermostatEco": {
+					"availableModes": [
+						"OFF",
+						"MANUAL_ECO"
+					],
+					"mode": "MANUAL_ECO",
+					"heatCelsius": 15.079132,
+					"coolCelsius": 24.444445
+				},
+				"sdm.devices.traits.ThermostatHvac": {
+					"status": "OFF"
+				},
+				"sdm.devices.traits.Settings": {
+					"temperatureScale": "CELSIUS"
+				},
+				"sdm.devices.traits.ThermostatTemperatureSetpoint": {},
+				"sdm.devices.traits.Temperature": {
+					"ambientTemperatureCelsius": 21.84
+				}
+			},
+			"parentRelations": [
+				{
+					"parent": "enterprises/******/rooms/*******",
+					"displayName": "Family room"
+				}
+			]
+		},
+		{
+			"name": "enterprises/*****/devices/*****",
+			"type": "sdm.devices.types.DOORBELL",
+			"assignee": "enterprises/*****/structures/******/rooms/*****",
+			"traits": {
+				"sdm.devices.traits.Info": {
+					"customName": ""
+				},
+				"sdm.devices.traits.CameraLiveStream": {
+					"maxVideoResolution": {
+						"width": 640,
+						"height": 480
+					},
+					"videoCodecs": [
+						"H264"
+					],
+					"audioCodecs": [
+						"AAC"
+					]
+				},
+				"sdm.devices.traits.CameraImage": {
+					"maxImageResolution": {
+						"width": 1920,
+						"height": 1200
+					}
+				},
+				"sdm.devices.traits.CameraPerson": {},
+				"sdm.devices.traits.CameraSound": {},
+				"sdm.devices.traits.CameraMotion": {},
+				"sdm.devices.traits.CameraEventImage": {}
+			},
+			"parentRelations": [
+				{
+					"parent": "enterprises/******/structures/******/rooms/*******",
+					"displayName": "DoorBell"
+				}
+			]
+		}
+	]
+}
